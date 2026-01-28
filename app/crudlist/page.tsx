@@ -1,5 +1,6 @@
 "use client";
 export const dynamic = "force-dynamic";
+
 import { SquarePen, Trash } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
