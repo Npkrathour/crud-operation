@@ -110,7 +110,7 @@ const CrudList = () => {
 
   return (
     <div className="text-white max-w-7xl w-full mx-auto p-5 space-y-5">
-      <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-4">
+      <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-4 w-full">
         <h1 className="md:text-xl text-md font-normal">
           All records in one place Create, Update, and Delete.
         </h1>

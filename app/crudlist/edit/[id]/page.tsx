@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-dynamic";
 
 import * as z from "zod";
 import { toast } from "sonner";
