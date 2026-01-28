@@ -123,8 +123,8 @@ const CrudList = () => {
         </Button>
       </div>
 
-      <div className="w-full ">
-        <table className="w-full border border-gray-400">
+      <div className="w-full overflow-x-auto">
+        <table className="w-full border border-gray-400 responsive-table">
           <thead>
             <tr className="bg-gray-900 text-center">
               <th className="border px-4 py-3">ID</th>
@@ -182,27 +182,27 @@ const CrudList = () => {
         </table>
 
         {/* Pagination */}
-        <div className="flex justify-center items-center gap-4 mt-5">
-          <Button
-            onClick={handlePrev}
-            disabled={currentPage === 1}
-            className="px-10 disabled:opacity-50"
-          >
-            Prev
-          </Button>
+      </div>
+      <div className="flex justify-center items-center gap-4 mt-5">
+        <Button
+          onClick={handlePrev}
+          disabled={currentPage === 1}
+          className="px-10 disabled:opacity-50"
+        >
+          Prev
+        </Button>
 
-          <span>
-            {currentPage} / {totalPages}
-          </span>
+        <span>
+          {currentPage} / {totalPages}
+        </span>
 
-          <Button
-            onClick={handleNext}
-            disabled={currentPage === totalPages}
-            className="px-10 disabled:opacity-50"
-          >
-            Next
-          </Button>
-        </div>
+        <Button
+          onClick={handleNext}
+          disabled={currentPage === totalPages}
+          className="px-10 disabled:opacity-50"
+        >
+          Next
+        </Button>
       </div>
     </div>
   );
